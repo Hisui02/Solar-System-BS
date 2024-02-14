@@ -98,19 +98,53 @@ $utilities: map-merge(
 
 img {
   object-fit: cover; //Se lo aplico a todas la imágenes, lo he visto lo más práctico
+  object-position: center;
+  height: 100%;
+  width: 100%;
 }
 .card {
   height: 100%;
 }
 .card-img-top {
-  height: 60%;
+  height: 55%;
 }
 
 .card-body {
-  height: 40%;
+  height: 45%;
 }
 
+// @include media-breakpoint-up(lg) {
+//   .carousel {
+//     width: 50dvw;
+//   }
+//   .carousel-inner {
+//     // height: 50dvh;
+//     width: 50dvw;
+//   }
+// }
+
 .carousel-inner {
-  max-height: 500px;
-  object-position: center;
+  height: 50dvh;
+  // width: 50dvw;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 60% !important;
+}
+
+.carousel-item div {
+  width: 40% !important;
+}
+
+.carousel-item.active {
+  display: flex !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5% !important;
 }
