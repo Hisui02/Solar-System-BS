@@ -167,7 +167,7 @@ img {
 
 #hero h1 {
   top: 50%;
-  font-size: 5rem;
+  font-size: 4rem;
   width: 100%;
   mix-blend-mode: difference;
   z-index: 20;
@@ -178,7 +178,6 @@ img {
   height: 100dvh;
   object-fit: cover;
   filter: contrast(140%) brightness(90%);
-  // filter: contrast(140%);
 }
 
 #miNavBar {
@@ -191,5 +190,5 @@ html::-webkit-scrollbar {
 }
 
 body {
-  overflow-x: hidden; /* Hide scrollbars */
+  overflow-x: hidden;
 }
